@@ -78,5 +78,11 @@ $(document).ready(function () {
   bsCustomFileInput.init();
 });
 </script>
+<script>
+  $(function () {
+    // Summernote
+    $('.textarea').summernote()
+  })
+</script>
 </body>
 </html>

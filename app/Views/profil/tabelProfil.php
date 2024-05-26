@@ -1,6 +1,11 @@
 <!-- Main content -->
 <section class="content">
       <div class="row">
+      <div class="card-footer">
+          <button type="submit" class="btn btn-primary" style="background-color: #7977CA !important;">
+          Tambah Profil
+        </button>
+      </div>
         <div class="col-12">
           <div class="card card-primary">
             <div class="card-header" style="background-color: #7977CA !important;">
