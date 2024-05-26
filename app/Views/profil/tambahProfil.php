@@ -6,8 +6,8 @@
             <div class="col-lg">
                 <!-- general form elements -->
                 <div class="card card-primary">
-                    <div class="card-header">
-                        <h3 class="card-title">Quick Example</h3>
+                    <div class="card-header" style="background-color: #7977CA !important;">
+                        <h3 class="card-title">Form Tambah Profil</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
@@ -43,7 +43,7 @@
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary" style="background-color: #7977CA !important;">Submit</button>
                         </div>
                     </form>
                 </div>

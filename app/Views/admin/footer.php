@@ -47,7 +47,36 @@
 <script src="<?= base_url('adminlte/');?>dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= base_url('adminlte/');?>dist/js/pages/dashboard.js"></script>
+<!-- bs-custom-file-input -->
+<script src="<?= base_url('adminlte/');?>plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url('adminlte/');?>dist/js/demo.js"></script>
+<script src="<?= base_url('adminlte/');?>plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="<?= base_url('adminlte/');?>plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url('adminlte/');?>plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?= base_url('adminlte/');?>plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+  bsCustomFileInput.init();
+});
+</script>
 </body>
 </html>
