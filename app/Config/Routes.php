@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/dashboard', 'Admin::index');
+$routes->get('/tambahProfil', 'Profil::index');
