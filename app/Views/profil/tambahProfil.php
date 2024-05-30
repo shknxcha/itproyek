@@ -11,15 +11,17 @@
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
-                    <form role="form">
+                    <form role="form" action="/profil/saveProfil" method="post" enctype="multipart/form-data">
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="judul">Judul</label>
-                                <input type="email" class="form-control" id="judul" name="judul" placeholder="Masukkan Judul">
+                                <input type="text" class="form-control" id="judul" name="judul"
+                                    placeholder="Masukkan Judul">
                             </div>
                             <div class="form-group">
                                 <label for="keterangan">Keterangan</label>
-                                <input type="email" class="form-control" id="keterangan" name="keterangan" placeholder="Masukkan keterangan singkat/slogan/pesan sederhana">
+                                <input type="text" class="form-control" id="keterangan" name="keterangan"
+                                    placeholder="Masukkan keterangan singkat/slogan/pesan sederhana">
                             </div>
                             <!-- Main content -->
                             <section class="content">
@@ -43,8 +45,9 @@
                                             <!-- /.card-header -->
                                             <div class="card-body pad">
                                                 <div class="mb-3">
-                                                    <textarea class="textarea" id="uraian" name="uraian" placeholder="Place some text here"
-                                                        style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                                                    <textarea class="textarea" id="uraian" name="uraian"
+                                                        placeholder="Place some text here"
+                                                        style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required ></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -55,7 +58,7 @@
                             </section>
                             <!-- /.content -->
                             <div class="form-group">
-                                <label for="exampleInputFile">IKon Logo</label>
+                                <label for="exampleInputFile">Ikon Logo</label>
                                 <div class="input-group">
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="ikon" name="ikon">
@@ -83,8 +86,13 @@
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary" style="background-color: #7977CA !important;">Submit</button>
+                            <button type="submit" class="btn btn-primary"
+                                style="background-color: #7977CA !important;">Submit</button>
                         </div>
                     </form>
                 </div>
                 <!-- /.card -->
+            </div>
+        </div>
+    </div>
+</section>

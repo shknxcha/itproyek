@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class ProfilModel extends Model
 {
-    protected $table = 'profil';
-    protected $primaryKey = 'id_profil';
+    protected $table = 'profile';
+    protected $primaryKey = 'id_profile';
     protected $allowedFields = ['judul', 'uraian', 'ikon', 'gambar', 'id_admin'];
 
     public function getAllProfil()
@@ -15,9 +15,9 @@ class ProfilModel extends Model
         return $this->findAll();
     }
 
-    public function getProfilById($id_profil)
+    public function getProfilById($id_profile)
     {
-        return $this->find($id_profil);
+        return $this->find($id_profile);
     }
 
     public function saveProfil($data)
@@ -25,13 +25,13 @@ class ProfilModel extends Model
         return $this->insert($data);
     }
 
-    public function update_profil($id_profil, $data)
+    public function update_profil($id_profile, $data)
     {
-        return $this->update($id_profil, $data);
+        return $this->update($id_profile, $data);
     }
 
-    public function delete_profil($id_profil)
+    public function delete_profil($id_profile)
     {
-        return $this->delete($id_profil);
+        return $this->delete($id_profile);
     }
 }
