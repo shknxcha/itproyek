@@ -13,3 +13,4 @@ $routes->get('/testimoni', 'Home::testimoni');
 $routes->get('/dashboard', 'Admin::index');
 $routes->get('/dataProfil', 'Profil::index');
 $routes->get('/tambahProfil', 'Profil::saveProfil');
+$routes->post('/hapusProfil/(:num)', 'Profil::hapusProfil/$1');

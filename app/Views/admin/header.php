@@ -29,14 +29,20 @@
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('adminlte/');?>plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="<?= base_url('adminlte/');?>plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet"
+        href="<?= base_url('adminlte/');?>plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <!-- Add this inside your head tag -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="background-color: #D1C1C1 !important;">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light"
+            style="background-color: #D1C1C1 !important;">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
