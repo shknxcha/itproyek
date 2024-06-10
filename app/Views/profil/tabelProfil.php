@@ -1,3 +1,4 @@
+<?php echo view('admin/header'); ?>
 <!-- Main content -->
 <section class="content">
     <div class="row">
@@ -153,3 +154,4 @@ $(document).ready(function() {
     });
 });
 </script>
+<?php echo view('admin/footer'); ?>

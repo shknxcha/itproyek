@@ -10,10 +10,8 @@ class Profil extends BaseController
     {
         $model = new ProfilModel();
         $data['profile'] = $model->findAll();
-        
-        echo view('admin/header');
-        echo view('profil/tabelProfil', $data);
-        echo view('admin/footer');
+       
+        return view('profil/tabelProfil', $data);
     }
 
     public function getProfilData($id_profile)
