@@ -2,7 +2,7 @@
 <section class="content">
     <div class="row">
         <div class="card-footer">
-            <a href="<?= base_url('/pesanan/create') ?>" class="btn btn-primary">Tambah Pesanan</a>
+            <a href="<?= base_url('tambahPesanan') ?>" class="btn btn-primary">Tambah Pesanan</a>
         </div>
         <div class="col-12">
             <div class="card card-primary">
@@ -18,6 +18,7 @@
                                 <th>Tanggal</th>
                                 <th>Total Harga</th>
                                 <th>ID Pengguna</th>
+                                <th>Status</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -28,6 +29,8 @@
                                 <td><?= $row['jumlah_pesanan'] ?></td>
                                 <td><?= $row['tanggal'] ?></td>
                                 <td><?= $row['total_harga'] ?></td>
+                                <td><?= $row['struk'] ?></td>
+                                <td><?= $row['status'] ?></td>
                                 <td><?= $row['id_pengguna'] ?></td>
                                 <td>
                                     <a class="btn btn-primary btn-sm mb-2" style="background-color: #FF4F9D !important;"
@@ -40,16 +43,7 @@
                             </tr>
                             <?php endforeach; ?>
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>No.</th>
-                                <th>Jumlah Pesanan</th>
-                                <th>Tanggal</th>
-                                <th>Total Harga</th>
-                                <th>ID Pengguna</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </tfoot>
+
                     </table>
                 </div>
             </div>

@@ -1,147 +1,119 @@
 <?php echo view('admin/header'); ?>
-<!-- Main content -->
 <section class="content">
-    <div class="row">
-        <div class="card-footer">
-            <a href="<?= base_url('/tambahProfil') ?>" class="btn btn-primary">Tambah Profil</a>
-        </div>
-        <div class="col-12">
-            <div class="card card-primary">
-                <div class="card-header" style="background-color: #7977CA !important;">
-                    <h3 class="card-title">Data Profil</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-12">
+                <!-- general form elements -->
+                <!-- notifikasi sukses dan error -->
+                <?php if (session()->getFlashdata('success')): ?>
+                <div class="alert alert-success" role="alert">
+                    <?= session()->getFlashdata('success'); ?>
                 </div>
-                <!-- /.card-header -->
-                <div class="card-body">
-                    <table id="example1" class="table table-bordered table-hover">
-                        <thead>
-                            <tr>
-                                <th>No.</th>
-                                <th>Judul</th>
-                                <th>Ikon Logo</th>
-                                <th>Gambar (background)</th>
-                                <th>Uraian</th>
-                                <th>Keterangan</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($profil as $key => $row): ?>
-                                <tr>
-                                    <td><?= $key + 1 ?></td>
-                                    <td><?= $row['judul'] ?></td>
-                                    <td><?= $row['ikon'] ?></td>
-                                    <td><?= $row['gambar'] ?></td>
-                                    <td><?= $row['uraian'] ?></td>
-                                    <td><?= $row['keterangan'] ?></td>
-                                    <td>
-                                        <a class="btn btn-primary btn-sm mb-2" style="background-color: #FF4F9D !important;"
-                                            href="/profil/tampilProfil/<?= $row['id_profile'] ?>"><i
-                                                class="fas fa-eye"></i></a>
-                                        <button class="btn btn-primary btn-sm mb-2 edit-btn"
-                                            style="background-color: #FF4F9D !important;"
-                                            data-id="<?= $row['id_profile'] ?>"><i class="fas fa-pen"></i></button>
-                                        <a class="btn btn-primary btn-sm mb-2" style="background-color: #FF4F9D !important;"
-                                            href="<?= base_url('/hapusProfil' . $row['id_profile']) ?>"
-                                            onclick="return confirm('Yakin ingin menghapus profil ini?')"><i
-                                                class="fas fa-trash-alt"></i></a>
+                <?php elseif (session()->getFlashdata('error')): ?>
+                <div class="alert alert-danger" role="alert">
+                    <?= session()->getFlashdata('error'); ?>
+                </div>
+                <?php endif; ?>
+                <div class="card card-primary">
+                    <div class="card-header">
 
+                        <h3 class="card-title"><?= $title ?></h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <!-- table untuk menampilkan produk -->
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Gambar</th>
+                                    <th>Logo</th>
+                                    <th>Uraian</th>
+                                    <th>Keterangan</th>
+                                    <th>Judul</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php $no = 1; ?>
+                                <?php foreach ($profile as $key => $value): ?>
+                                <tr>
+                                    <td><?= $no++; ?></td>
+                                    <td><img src="<?= base_url('gambar_profil/' . $value['gambar']); ?>" width="100px">
+                                    <td><img src="<?= base_url('gambar_profil/' . $value['ikon']); ?>" width="100px">
+                                    <td><?= $value['uraian']; ?></td>
+                                    </td>
+                                    <td><?= $value['keterangan']; ?></td>
+                                    <td><?= $value['judul']; ?></td>
+                                    <td>
+                                        <!-- button modal edit -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#edit<?= $value['id_profile']; ?>">
+                                            Edit
+                                        </button>
+                                        <a href="<?= base_url('hapusprofil/' . $value['id_profile']); ?>"
+                                            class="btn btn-danger">Hapus</a>
                                     </td>
                                 </tr>
-                            <?php endforeach; ?>
-                        </tbody>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
 
-                    </table>
                 </div>
-                <!-- /.card-body -->
             </div>
-            <!-- /.card -->
         </div>
     </div>
 </section>
-
-<!-- Edit Modal -->
-<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<!-- Modal Produk -->
+<?php foreach ($profile as $key => $value): ?>
+<div class="modal fade" id="edit<?= $value['id_profile']; ?>">
+    <div class="modal-dialog">
         <div class="modal-content">
-            <form id="editForm" method="post" action="<?= base_url('/profil/updateProfil') ?>"
-                enctype="multipart/form-data">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel">Edit Profil</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <input type="hidden" id="editId" name="id_profile">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Profil</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form role="form" method="POST" action="<?= base_url('edit/' . $value['id_profile']) ?>"
+                    enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="editJudul">Judul</label>
-                        <input type="text" class="form-control" id="editJudul" name="judul" placeholder="Masukkan judul"
-                            required>
+                        <label for="gambar">Gambar :</label>
+                        <input type="file" class="form-control-file" id="gambar" name="gambar">
+                        <input type="hidden" name="gambar_lama" value="<?= $value['gambar']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="editKeterangan">Keterangan</label>
-                        <input type="text" class="form-control" id="editKeterangan" name="keterangan"
-                            placeholder="Keterangan" required>
+                        <label for="ikon">Logo :</label>
+                        <input type="file" class="form-control-file" id="ikon" name="ikon">
+                        <input type="hidden" name="ikon_lama" value="<?= $value['ikon']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="editUraian">Uraian</label>
-                        <textarea class="form-control" id="editUraian" name="uraian" placeholder="Place some text here"
-                            required></textarea>
+                        <label for="warna">Uraian :</label>
+                        <input type="text" class="form-control" id="uraian" name="uraian"
+                            value="<?= $value['uraian']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="editIkon">Ikon</label>
-                        <input type="file" class="form-control" id="editIkon" name="ikon">
+                        <label for="keterangan">Keterangan :</label>
+                        <input type="text" class="form-control" id="keterangan" name="keterangan"
+                            value="<?= $value['keterangan']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="editGambar">Gambar</label>
-                        <input type="file" class="form-control" id="editGambar" name="gambar">
+                        <label for="judul">Judul :</label>
+                        <input type="text" class="form-control" id="judul" name="judul" value="<?= $value['judul']; ?>">
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-            </form>
+                    <input type="hidden" name="id_profile" value="<?= $value['id_profile']; ?>">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
+        <!-- /.modal-content -->
     </div>
+    <!-- /.modal-dialog -->
 </div>
-
-<script>
-    $(document).ready(function () {
-        $('.edit-btn').on('click', function () {
-            var id_profile = $(this).data('id');
-            $.ajax({
-                url: '/profil/getProfilData/' + id_profile,
-                method: 'GET',
-                success: function (response) {
-                    $('#editId').val(response.id_profile);
-                    $('#editJudul').val(response.judul);
-                    $('#editKeterangan').val(response.keterangan);
-                    $('#editUraian').val(response.uraian);
-                    $('#editModal').modal('show');
-                },
-                error: function (xhr, status, error) {
-                    console.error(xhr.responseText);
-                }
-            });
-        });
-
-        $('#editForm').on('submit', function (e) {
-            e.preventDefault();
-            var data = $(this).serialize();
-            $.ajax({
-                url: '/profil/updateProfil',
-                method: 'POST',
-                data: data,
-                success: function (response) {
-                    $('#editModal').modal('hide');
-                    location.reload();
-                },
-                error: function (xhr, status, error) {
-                    console.error(xhr.responseText);
-                }
-            });
-        });
-    });
-</script>
+<!-- /.modal -->
+<?php endforeach; ?>
 <?php echo view('admin/footer'); ?>
