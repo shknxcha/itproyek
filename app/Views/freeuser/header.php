@@ -82,9 +82,10 @@
                             <a href="<?= base_url('/');?>" class="nav-item nav-link active">Beranda</a>
                             <a href="<?= base_url('/profil');?>" class="nav-item nav-link">Profil</a>
                             <a href="<?= base_url('/galeri');?>" class="nav-item nav-link">Galeri</a>
-                            <a href="<?= base_url('/testimoni');?>" class="nav-item nav-link">Testimoni</a>
+                            <a href="<?= base_url('/testi');?>" class="nav-item nav-link">Testimoni</a>
                             <div class="nav-item dropdown">
-                                <a href="<?= base_url('/informasi');?>" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Informasi</a>
+                                <a href="<?= base_url('/informasi');?>" class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown">Informasi</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                     <a href="<?= base_url('/');?>" class="dropdown-item">Bouquet</a>
                                     <a href="<?= base_url('/');?>" class="dropdown-item">Papan Ucapan</a>

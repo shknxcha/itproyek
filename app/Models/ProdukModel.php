@@ -7,8 +7,8 @@ use CodeIgniter\Model;
 class ProdukModel extends Model
 {
     protected $table = 'produk';
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['produk', 'warna', 'harga', 'ukuran', 'gambar'];
+    protected $primaryKey = 'id_produk';
+    protected $allowedFields = ['produk', 'warna', 'harga', 'ukuran', 'gambar', 'stok', 'id_pengguna'];
 
     public function tambahProduk($data)
     {

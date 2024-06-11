@@ -1,0 +1,170 @@
+ERROR - 2024-06-11 00:54:43 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('p:localhost', 'root', Object(SensitiveParameterValue), 'ldr_db', 3306, '', 0)
+#1 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#2 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\appldr\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xamppp\htdocs\appldr\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\appldr\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\appldr\app\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+#8 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+#9 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\appldr\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppp\htdocs\appldr\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xamppp\htdocs\appldr\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xamppp\htdocs\appldr\system\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#1 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\appldr\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xamppp\htdocs\appldr\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\appldr\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\appldr\app\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+#7 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+#8 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\appldr\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppp\htdocs\appldr\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xamppp\htdocs\appldr\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xamppp\htdocs\appldr\system\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdoc...')
+#13 {main}
+CRITICAL - 2024-06-11 00:54:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dataProfil]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profile`', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+ERROR - 2024-06-11 00:54:48 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('p:localhost', 'root', Object(SensitiveParameterValue), 'ldr_db', 3306, '', 0)
+#1 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#2 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\appldr\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xamppp\htdocs\appldr\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\appldr\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\appldr\app\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+#8 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+#9 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\appldr\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppp\htdocs\appldr\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xamppp\htdocs\appldr\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xamppp\htdocs\appldr\system\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#1 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\appldr\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xamppp\htdocs\appldr\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\appldr\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\appldr\app\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+#7 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+#8 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\appldr\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppp\htdocs\appldr\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xamppp\htdocs\appldr\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xamppp\htdocs\appldr\system\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdoc...')
+#13 {main}
+CRITICAL - 2024-06-11 00:54:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dataProfil]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profile`', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+ERROR - 2024-06-11 00:55:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('p:localhost', 'root', Object(SensitiveParameterValue), 'ldr_db', 3306, '', 0)
+#1 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#2 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\appldr\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xamppp\htdocs\appldr\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\appldr\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\appldr\app\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+#8 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+#9 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\appldr\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppp\htdocs\appldr\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xamppp\htdocs\appldr\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xamppp\htdocs\appldr\system\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#1 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\appldr\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xamppp\htdocs\appldr\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\appldr\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\appldr\app\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+#7 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+#8 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\appldr\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppp\htdocs\appldr\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xamppp\htdocs\appldr\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xamppp\htdocs\appldr\system\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdoc...')
+#13 {main}
+CRITICAL - 2024-06-11 00:55:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dataProfil]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profile`', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProfilController.php(24): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProfilController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfilController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-11 00:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-11 00:55:43 --> ErrorException: Undefined variable $key
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 191.
+ 1 APPPATH\Views\Akun\akun.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $key', 'C:\\xamppp\\htdocs\\appldr\\app\\Views\\Akun\\akun.php', 191)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamppp\\htdocs\\appldr\\app\\Views\\Akun\\akun.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 5 APPPATH\Controllers\Akun.php(14): view('akun/akun', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-11 00:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

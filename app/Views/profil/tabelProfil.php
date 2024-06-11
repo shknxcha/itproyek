@@ -12,7 +12,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    <table id="example2" class="table table-bordered table-hover">
+                    <table id="example1" class="table table-bordered table-hover">
                         <thead>
                             <tr>
                                 <th>No.</th>
@@ -25,41 +25,31 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($profile as $key => $row): ?>
-                            <tr>
-                                <td><?= $key + 1 ?></td>
-                                <td><?= $row['judul'] ?></td>
-                                <td><?= $row['ikon'] ?></td>
-                                <td><?= $row['gambar'] ?></td>
-                                <td><?= $row['uraian'] ?></td>
-                                <td><?= $row['keterangan'] ?></td>
-                                <td>
-                                    <a class="btn btn-primary btn-sm mb-2" style="background-color: #FF4F9D !important;"
-                                        href="/profil/tampilProfil/<?= $row['id_profile'] ?>"><i
-                                            class="fas fa-eye"></i></a>
-                                    <button class="btn btn-primary btn-sm mb-2 edit-btn"
-                                        style="background-color: #FF4F9D !important;"
-                                        data-id="<?= $row['id_profile'] ?>"><i class="fas fa-pen"></i></button>
-                                    <a class="btn btn-primary btn-sm mb-2" style="background-color: #FF4F9D !important;"
-                                        href="<?= base_url('/hapusProfil'.$row['id_profile']) ?>"
-                                        onclick="return confirm('Yakin ingin menghapus profil ini?')"><i
-                                            class="fas fa-trash-alt"></i></a>
+                            <?php foreach ($profil as $key => $row): ?>
+                                <tr>
+                                    <td><?= $key + 1 ?></td>
+                                    <td><?= $row['judul'] ?></td>
+                                    <td><?= $row['ikon'] ?></td>
+                                    <td><?= $row['gambar'] ?></td>
+                                    <td><?= $row['uraian'] ?></td>
+                                    <td><?= $row['keterangan'] ?></td>
+                                    <td>
+                                        <a class="btn btn-primary btn-sm mb-2" style="background-color: #FF4F9D !important;"
+                                            href="/profil/tampilProfil/<?= $row['id_profile'] ?>"><i
+                                                class="fas fa-eye"></i></a>
+                                        <button class="btn btn-primary btn-sm mb-2 edit-btn"
+                                            style="background-color: #FF4F9D !important;"
+                                            data-id="<?= $row['id_profile'] ?>"><i class="fas fa-pen"></i></button>
+                                        <a class="btn btn-primary btn-sm mb-2" style="background-color: #FF4F9D !important;"
+                                            href="<?= base_url('/hapusProfil' . $row['id_profile']) ?>"
+                                            onclick="return confirm('Yakin ingin menghapus profil ini?')"><i
+                                                class="fas fa-trash-alt"></i></a>
 
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
                             <?php endforeach; ?>
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>No.</th>
-                                <th>Judul</th>
-                                <th>Ikon Logo</th>
-                                <th>Gambar (background)</th>
-                                <th>Uraian</th>
-                                <th>Keterangan</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </tfoot>
+
                     </table>
                 </div>
                 <!-- /.card-body -->
@@ -117,41 +107,41 @@
 </div>
 
 <script>
-$(document).ready(function() {
-    $('.edit-btn').on('click', function() {
-        var id_profile = $(this).data('id');
-        $.ajax({
-            url: '/profil/getProfilData/' + id_profile,
-            method: 'GET',
-            success: function(response) {
-                $('#editId').val(response.id_profile);
-                $('#editJudul').val(response.judul);
-                $('#editKeterangan').val(response.keterangan);
-                $('#editUraian').val(response.uraian);
-                $('#editModal').modal('show');
-            },
-            error: function(xhr, status, error) {
-                console.error(xhr.responseText);
-            }
+    $(document).ready(function () {
+        $('.edit-btn').on('click', function () {
+            var id_profile = $(this).data('id');
+            $.ajax({
+                url: '/profil/getProfilData/' + id_profile,
+                method: 'GET',
+                success: function (response) {
+                    $('#editId').val(response.id_profile);
+                    $('#editJudul').val(response.judul);
+                    $('#editKeterangan').val(response.keterangan);
+                    $('#editUraian').val(response.uraian);
+                    $('#editModal').modal('show');
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
         });
-    });
 
-    $('#editForm').on('submit', function(e) {
-        e.preventDefault();
-        var data = $(this).serialize();
-        $.ajax({
-            url: '/profil/updateProfil',
-            method: 'POST',
-            data: data,
-            success: function(response) {
-                $('#editModal').modal('hide');
-                location.reload();
-            },
-            error: function(xhr, status, error) {
-                console.error(xhr.responseText);
-            }
+        $('#editForm').on('submit', function (e) {
+            e.preventDefault();
+            var data = $(this).serialize();
+            $.ajax({
+                url: '/profil/updateProfil',
+                method: 'POST',
+                data: data,
+                success: function (response) {
+                    $('#editModal').modal('hide');
+                    location.reload();
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                }
+            });
         });
     });
-});
 </script>
 <?php echo view('admin/footer'); ?>
