@@ -24,9 +24,29 @@
                                 value="<?= $pesanan['total_harga'] ?>" required>
                         </div>
                         <div class="form-group">
-                            <label for="id_pengguna">ID Pengguna</label>
-                            <input type="number" class="form-control" id="id_pengguna" name="id_pengguna"
-                                value="<?= $pesanan['id_pengguna'] ?>" required>
+                            <label for="status">Status</label>
+                            <input type="text" class="form-control" id="status" name="status"
+                                value="<?= $pesanan['status'] ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="struk">Struk</label>
+                            <input type="file" class="form-control" id="struk" name="struk" value="<?= $pesanan['struk'] ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_produk">Nama Produk</label>
+                            <select class="form-control" id="id_produk" name="id_produk" required>
+                                <?php foreach($produkList as $produk): ?>
+                                    <option value="<?= $produk['id_produk'] ?>" <?= $pesanan['id_produk'] == $produk['id_produk'] ? 'selected' : '' ?>><?= $produk['produk'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_pengguna">Nama Pengguna</label>
+                            <select class="form-control" id="id_pengguna" name="id_pengguna" required>
+                                <?php foreach($penggunaList as $pengguna): ?>
+                                    <option value="<?= $pengguna['id_pengguna'] ?>" <?= $pesanan['id_pengguna'] == $pengguna['id_pengguna'] ? 'selected' : '' ?>><?= $pengguna['nama'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                     </div>
                     <div class="card-footer">

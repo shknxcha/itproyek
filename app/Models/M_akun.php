@@ -6,9 +6,7 @@ use CodeIgniter\Model;
 
 class M_akun extends Model
 {
-    protected $table = 'Akun';
-    protected $primaryKey = 'id';
-    protected $allowedFields = ['username', 'level', 'password'];
-    protected $returnType = 'object';
-
+    protected $table = 'akun';
+    protected $primaryKey = 'id_akun';
+    protected $allowedFields = ['username', 'password', 'level'];
 }

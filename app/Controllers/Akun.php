@@ -3,71 +3,78 @@
 namespace App\Controllers;
 
 use App\Models\M_akun;
-use CodeIgniter\Controller;
+use App\Models\PenggunaModel;
 
-class Akun extends Controller
+class Akun extends BaseController
 {
-    public function akun()
+    public function index()
     {
-        $model = new M_akun();
-        $data['akun'] = $model->findAll();
-         return view('akun/akun', $data);
+        $akunModel = new M_akun();
+        $data['akun'] = $akunModel->findAll();
+        $data['title'] = 'Daftar Akun';
+        return view('akun/listAkun', $data);
+    }
+
+    public function register()
+    {
+        return view('login/register');
     }
 
     public function create()
     {
-        return view('create_akun');
-    }
-
-    public function store()
-    {
-        $model = new M_akun();
+        $akunModel = new M_akun();
 
         $data = [
             'username' => $this->request->getPost('username'),
-            'password' => $this->request->getPost('password'),
-            'level' => $this->request->getPost('level'),
+            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'level' => 'user'
         ];
 
-        $model->save($data);
-
-        return redirect()->to('/akun');
+        $akunModel->insert($data);
+        return redirect()->to('/login/login')->with('success', 'Akun berhasil dibuat.');
     }
 
-    public function edit($id)
+    public function editProfile()
     {
-        $model = new M_akun();
-        $data['akun'] = $model->find($id);
+        $id = session()->get('id_akun');
+        $akunModel = new M_akun();
+        $penggunaModel = new PenggunaModel();
 
-        // Pengecekan apakah data ditemukan
-        if (empty($data['akun'])) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Akun with ID ' . $id . ' not found.');
+        $data['akun'] = $akunModel->find($id);
+        $data['pengguna'] = $penggunaModel->where('id_akun', $id)->first();
+        return view('akun/edit_akun', $data);
+    }
+
+    public function updateProfile()
+    {
+        $id = session()->get('id_akun');
+        $akunModel = new M_akun();
+        $penggunaModel = new PenggunaModel();
+
+        $dataAkun = [
+            'username' => $this->request->getPost('username')
+        ];
+
+        if ($this->request->getPost('password')) {
+            $dataAkun['password'] = password_hash($this->request->getPost('password'), PASSWORD_DEFAULT);
         }
 
-        return view('edit_akun', $data);
-    }
-
-    public function update($id)
-    {
-        $model = new M_akun();
-
-        $data = [
-            'id' => $id,
-            'username' => $this->request->getPost('username'),
-            'password' => $this->request->getPost('password'),
-            'level' => $this->request->getPost('level'),
+        $dataPengguna = [
+            'nama' => $this->request->getPost('nama'),
+            'alamat' => $this->request->getPost('alamat'),
+            'nohp' => $this->request->getPost('nohp')
         ];
 
-        $model->save($data);
+        $akunModel->update($id, $dataAkun);
+        $penggunaModel->where('id_akun', $id)->set($dataPengguna)->update();
 
-        return redirect()->to('/akun');
+        return redirect()->to('/akun/editProfile')->with('success', 'Profil berhasil diubah.');
     }
 
     public function delete($id)
     {
-        $model = new M_akun();
-        $model->delete($id);
-
-        return redirect()->to('/akun');
+        $akunModel = new M_akun();
+        $akunModel->delete($id);
+        return redirect()->to('/akun')->with('success', 'Akun berhasil dihapus.');
     }
 }

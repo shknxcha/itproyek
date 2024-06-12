@@ -4,6 +4,20 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
+class ProdukModel extends Model
+{
+    protected $table = 'produk';
+    protected $primaryKey = 'id_produk';
+    protected $allowedFields = ['produk', 'warna', 'harga', 'ukuran', 'gambar', 'stok', 'id_pengguna'];
+}
+
+class PenggunaModel extends Model
+{
+    protected $table = 'pengguna';
+    protected $primaryKey = 'id_pengguna';
+    protected $allowedFields = ['nama', 'alamat', 'id_akun', 'nohp'];
+}
+
 class PesanModel extends Model
 {
     protected $table = 'pesanan';
@@ -23,5 +37,15 @@ class PesanModel extends Model
     public function hapusPesanan($id)
     {
         $this->delete($id);
+    }
+
+    public function getProdukList()
+    {
+        return $this->db->table('produk')->select('id_produk, produk')->get()->getResultArray();
+    }
+
+    public function getPenggunaList()
+    {
+        return $this->db->table('pengguna')->select('id_pengguna, nama')->get()->getResultArray();
     }
 }

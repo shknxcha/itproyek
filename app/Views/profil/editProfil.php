@@ -13,13 +13,14 @@
                             <div class="form-group">
                                 <label for="gambar">Gambar :</label>
                                 <input type="file" class="form-control-file" id="gambar" name="gambar">
-                                <input type="hidden" name="gambar_lama" value="<?= $profile['gambar']; ?>">
+                                <input type="hidden" name="gambar_lama" value="<?= $value['gambar']; ?>">
                             </div>
                             <div class="form-group">
                                 <label for="ikon">Logo :</label>
                                 <input type="file" class="form-control-file" id="ikon" name="ikon">
-                                <input type="hidden" name="ikon_lama" value="<?= $profile['ikon']; ?>">
+                                <input type="hidden" name="ikon_lama" value="<?= $value['ikon']; ?>">
                             </div>
+
                             <div class="form-group">
                                 <label for="uraian">Uraian :</label>
                                 <input type="text" class="form-control" id="uraian" name="uraian"

@@ -1,0 +1,704 @@
+INFO - 2024-06-12 00:07:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 00:07:12 --> ErrorException: unlink(C:\xamppp\htdocs\appldr\public\gambar_profil/): Is a directory
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/): Is a directory', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 60)
+ 2 APPPATH\Controllers\Profil.php(60): unlink('C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:08:42 --> ErrorException: unlink(C:\xamppp\htdocs\appldr\public\/gambar_profil): Is a directory
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xamppp\\htdocs\\appldr\\public\\/gambar_profil): Is a directory', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 60)
+ 2 APPPATH\Controllers\Profil.php(60): unlink('C:\\xamppp\\htdocs\\appldr\\public\\/gambar_profil')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:08:56 --> ErrorException: unlink(C:\xamppp\htdocs\appldr\public\\gambar_profil): Is a directory
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xamppp\\htdocs\\appldr\\public\\\\gambar_profil): Is a directory', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 60)
+ 2 APPPATH\Controllers\Profil.php(60): unlink('C:\\xamppp\\htdocs\\appldr\\public\\\\gambar_profil')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:09:07 --> ErrorException: unlink(C:\xamppp\htdocs\appldr\public\gambar_profil): Is a directory
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil): Is a directory', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 60)
+ 2 APPPATH\Controllers\Profil.php(60): unlink('C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:12:15 --> ParseError: syntax error, unexpected identifier "ppublic", expecting "function" or "const"
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profil')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profil')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Profil', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:12:43 --> ErrorException: unlink(C:\xamppp\htdocs\appldr\public\gambar_profil/): Is a directory
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/): Is a directory', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 60)
+ 2 APPPATH\Controllers\Profil.php(60): unlink('C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 00:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:14:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 00:15:48 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: edit/1]
+in APPPATH\Views\profil\tabelProfil.php on line 43.
+ 1 APPPATH\Views\profil\tabelProfil.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xamppp\\htdocs\\appldr\\app\\Views\\profil\\tabelProfil.php', 43)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamppp\\htdocs\\appldr\\app\\Views\\profil\\tabelProfil.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil/tabelProfil', [], true)
+ 5 APPPATH\Controllers\Profil.php(100): view('profil/tabelProfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:25:07 --> ErrorException: Undefined array key "id_profile"
+[Method: GET, Route: edit/1]
+in APPPATH\Views\profil\editProfil.php on line 11.
+ 1 APPPATH\Views\profil\editProfil.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_profile"', 'C:\\xamppp\\htdocs\\appldr\\app\\Views\\profil\\editProfil.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamppp\\htdocs\\appldr\\app\\Views\\profil\\editProfil.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil/editProfil', [], true)
+ 5 APPPATH\Controllers\Profil.php(87): view('profil/editProfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 00:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 00:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 00:27:57 --> ErrorException: unlink(C:\xamppp\htdocs\appldr\public\gambar_profil/): Is a directory
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/): Is a directory', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 61)
+ 2 APPPATH\Controllers\Profil.php(61): unlink('C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:31:25 --> ErrorException: unlink(C:\xamppp\htdocs\appldr\public\gambar_profil/): Is a directory
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/): Is a directory', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 61)
+ 2 APPPATH\Controllers\Profil.php(61): unlink('C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:31:55 --> ErrorException: unlink(C:\xamppp\htdocs\appldr\public\gambar_profil/): Is a directory
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/): Is a directory', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 61)
+ 2 APPPATH\Controllers\Profil.php(61): unlink('C:\\xamppp\\htdocs\\appldr\\public\\gambar_profil/')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 00:56:46 --> ErrorException: Undefined variable $namagambar
+[Method: POST, Route: edit/1]
+in APPPATH\Controllers\Profil.php on line 69.
+ 1 APPPATH\Controllers\Profil.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namagambar', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Profil.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->updateProfil('1')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 01:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 01:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 01:09:59 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: dataProfil]
+in APPPATH\Views\profil\tabelProfil.php on line 43.
+ 1 APPPATH\Views\profil\tabelProfil.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xamppp\\htdocs\\appldr\\app\\Views\\profil\\tabelProfil.php', 43)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamppp\\htdocs\\appldr\\app\\Views\\profil\\tabelProfil.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil/tabelProfil', [], true)
+ 5 APPPATH\Controllers\Profil.php(23): view('profil/tabelProfil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 01:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 01:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 01:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 01:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 01:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 01:30:49 --> ErrorException: Undefined property: App\Controllers\Pesanan::$model
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Controllers\Pesanan.php on line 166.
+ 1 APPPATH\Controllers\Pesanan.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Pesanan::$model', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Pesanan.php', 166)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 01:32:10 --> ErrorException: Undefined array key "id_pesanan"
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\edit.php on line 9.
+ 1 APPPATH\Views\pesanan\edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pesanan"', 'C:\\xamppp\\htdocs\\appldr\\app\\Views\\pesanan\\edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamppp\\htdocs\\appldr\\app\\Views\\pesanan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/edit', [], true)
+ 5 APPPATH\Controllers\Pesanan.php(169): view('pesanan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 01:33:44 --> ErrorException: Undefined array key "id_pesanan"
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\edit.php on line 9.
+ 1 APPPATH\Views\pesanan\edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_pesanan"', 'C:\\xamppp\\htdocs\\appldr\\app\\Views\\pesanan\\edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamppp\\htdocs\\appldr\\app\\Views\\pesanan\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/edit', [], true)
+ 5 APPPATH\Controllers\Pesanan.php(169): view('pesanan/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 02:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 02:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 02:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 02:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 02:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 02:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 02:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 02:19:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pesanan/tabelProfil.php"
+[Method: GET, Route: pesanan/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pesanan/tabelProfil.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelProfil', [], true)
+ 3 APPPATH\Controllers\Pesanan.php(163): view('pesanan/tabelProfil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 02:20:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pesanan/.php"
+[Method: GET, Route: pesanan/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pesanan/.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/', [], true)
+ 3 APPPATH\Controllers\Pesanan.php(163): view('pesanan/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 02:20:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pesanan/.php"
+[Method: GET, Route: pesanan/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pesanan/.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/', [], true)
+ 3 APPPATH\Controllers\Pesanan.php(163): view('pesanan/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 02:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 02:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 02:24:03 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 30.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(163): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 02:27:14 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 32.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(163): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 02:28:11 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 32.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(163): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 02:30:24 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 32.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(163): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:02:19 --> Error: Class "App\Controllers\ProdukModel" not found
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Controllers\Pesanan.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Pesanan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:03:09 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 32.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(158): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:06:53 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 32.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(158): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:09:17 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(166): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:09:21 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(166): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 03:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 03:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 03:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 03:11:31 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: pesanan/edit/2]
+in APPPATH\Views\pesanan\tabelPesanan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('pesanan/tabelPesanan', [], true)
+ 4 APPPATH\Controllers\Pesanan.php(161): view('pesanan/tabelPesanan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 03:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 03:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 03:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 03:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 03:22:25 --> ErrorException: Undefined array key "gambar"
+[Method: GET, Route: pesanan/delete/2]
+in APPPATH\Controllers\Pesanan.php on line 171.
+ 1 APPPATH\Controllers\Pesanan.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "gambar"', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Pesanan.php', 171)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pesanan->hapusPesanan('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesanan))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:40:11 --> ParseError: syntax error, unexpected token "else", expecting "function" or "const"
+[Method: GET, Route: pesanan/delete/2]
+in APPPATH\Controllers\Pesanan.php on line 182.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Pesanan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pesanan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pesanan')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Pesanan', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:41:45 --> ParseError: syntax error, unexpected token "else", expecting "function" or "const"
+[Method: GET, Route: pesanan/delete/2]
+in APPPATH\Controllers\Pesanan.php on line 182.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Pesanan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pesanan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pesanan')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Pesanan', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:41:47 --> ParseError: syntax error, unexpected token "else", expecting "function" or "const"
+[Method: GET, Route: pesanan/delete/2]
+in APPPATH\Controllers\Pesanan.php on line 182.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Pesanan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pesanan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pesanan')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Pesanan', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 03:42:36 --> ParseError: Unclosed '{' on line 11
+[Method: GET, Route: pesanan/delete/2]
+in APPPATH\Controllers\Pesanan.php on line 185.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Pesanan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pesanan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pesanan')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Pesanan', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 03:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 03:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 03:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 03:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 04:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 04:09:58 --> ErrorException: Undefined variable $title
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 24.
+ 1 APPPATH\Views\Akun\akun.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xamppp\\htdocs\\appldr\\app\\Views\\Akun\\akun.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamppp\\htdocs\\appldr\\app\\Views\\Akun\\akun.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 5 APPPATH\Controllers\Akun.php(14): view('akun/akun', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 04:11:08 --> ErrorException: Undefined property: App\Controllers\Akun::$produkModel
+[Method: GET, Route: akun]
+in APPPATH\Controllers\Akun.php on line 15.
+ 1 APPPATH\Controllers\Akun.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Akun::$produkModel', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Akun.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 04:11:41 --> ErrorException: Undefined property: App\Controllers\Akun::$M_akun
+[Method: GET, Route: akun]
+in APPPATH\Controllers\Akun.php on line 15.
+ 1 APPPATH\Controllers\Akun.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Akun::$M_akun', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Akun.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+CRITICAL - 2024-06-12 04:11:55 --> ErrorException: Undefined property: App\Controllers\Akun::$model
+[Method: GET, Route: akun]
+in APPPATH\Controllers\Akun.php on line 15.
+ 1 APPPATH\Controllers\Akun.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Akun::$model', 'C:\\xamppp\\htdocs\\appldr\\app\\Controllers\\Akun.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 04:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 04:13:02 --> ErrorException: Undefined variable $produk
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 44.
+ 1 APPPATH\Views\Akun\akun.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xamppp\\htdocs\\appldr\\app\\Views\\Akun\\akun.php', 44)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xamppp\\htdocs\\appldr\\app\\Views\\Akun\\akun.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 5 APPPATH\Controllers\Akun.php(24): view('akun/akun', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 04:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 04:16:12 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 44.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 4 APPPATH\Controllers\Akun.php(24): view('akun/akun', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 04:17:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 04:17:30 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 44.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 4 APPPATH\Controllers\Akun.php(24): view('akun/akun', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 04:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 04:17:32 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 44.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 4 APPPATH\Controllers\Akun.php(24): view('akun/akun', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+ERROR - 2024-06-12 05:05:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('p:localhost', 'root', Object(SensitiveParameterValue), 'ldr_db', 3306, '', 0)
+#1 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#2 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppp\htdocs\appldr\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xamppp\htdocs\appldr\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppp\htdocs\appldr\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppp\htdocs\appldr\app\Controllers\Akun.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(933): App\Controllers\Akun->akun()
+#8 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+#9 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppp\htdocs\appldr\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppp\htdocs\appldr\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xamppp\htdocs\appldr\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xamppp\htdocs\appldr\system\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xamppp\htdocs\appldr\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(true)
+#1 C:\xamppp\htdocs\appldr\system\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppp\htdocs\appldr\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xamppp\htdocs\appldr\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppp\htdocs\appldr\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppp\htdocs\appldr\app\Controllers\Akun.php(22): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(933): App\Controllers\Akun->akun()
+#7 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+#8 C:\xamppp\htdocs\appldr\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppp\htdocs\appldr\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppp\htdocs\appldr\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xamppp\htdocs\appldr\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xamppp\htdocs\appldr\system\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdoc...')
+#13 {main}
+CRITICAL - 2024-06-12 05:05:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: akun]
+in SYSTEMPATH\Database\BaseConnection.php on line 457.
+ 1 SYSTEMPATH\Database\BaseConnection.php(604): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Akun`', [], false)
+ 3 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Akun.php(22): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 05:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 05:06:17 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 44.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 4 APPPATH\Controllers\Akun.php(24): view('akun/akun', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 05:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 05:09:23 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 44.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 4 APPPATH\Controllers\Akun.php(24): view('akun/akun', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 05:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 05:33:41 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: akun]
+in APPPATH\Views\Akun\akun.php on line 44.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/akun', [], true)
+ 4 APPPATH\Controllers\Akun.php(24): view('akun/akun', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->akun()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
+INFO - 2024-06-12 06:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-12 06:23:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "akun/register.php"
+[Method: GET, Route: regist]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('akun/register.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('akun/register', [], true)
+ 3 APPPATH\Controllers\Akun.php(20): view('akun/register')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Akun->register()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Akun))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')

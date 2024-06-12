@@ -2,10 +2,7 @@
 <section class="content">
     <div class="container-fluid">
         <div class="row">
-            <!-- left column -->
             <div class="col-12">
-                <!-- general form elements -->
-                <!-- notifikasi sukses dan error -->
                 <?php if (session()->getFlashdata('success')): ?>
                 <div class="alert alert-success" role="alert">
                     <?= session()->getFlashdata('success'); ?>
@@ -17,18 +14,15 @@
                 <?php endif; ?>
                 <div class="card card-primary">
                     <div class="card-header">
-
                         <h3 class="card-title"><?= $title ?></h3>
                     </div>
-                    <!-- /.card-header -->
                     <div class="card-body">
-                        <!-- table untuk menampilkan produk -->
                         <table id="example1" class="table table-bordered table-striped">
                             <thead>
                                 <tr>
                                     <th>No</th>
                                     <th>Gambar</th>
-                                    <th>Logo</th>
+                                    <th>Ikon</th>
                                     <th>Uraian</th>
                                     <th>Keterangan</th>
                                     <th>Judul</th>
@@ -37,38 +31,34 @@
                             </thead>
                             <tbody>
                                 <?php $no = 1; ?>
-                                <?php foreach ($profile as $key => $value): ?>
+                                <?php foreach ($profile as $value): ?>
                                 <tr>
                                     <td><?= $no++; ?></td>
                                     <td><img src="<?= base_url('gambar_profil/' . $value['gambar']); ?>" width="100px">
-                                    <td><img src="<?= base_url('gambar_profil/' . $value['ikon']); ?>" width="100px">
-                                    <td><?= $value['uraian']; ?></td>
                                     </td>
+                                    <td><img src="<?= base_url('gambar_profil/' . $value['ikon']); ?>" width="100px">
+                                    </td>
+                                    <td><?= $value['uraian']; ?></td>
                                     <td><?= $value['keterangan']; ?></td>
                                     <td><?= $value['judul']; ?></td>
                                     <td>
-                                        <!-- button modal edit -->
                                         <button type="button" class="btn btn-primary" data-toggle="modal"
                                             data-target="#edit<?= $value['id_profile']; ?>">
                                             Edit
                                         </button>
-                                        <a href="<?= base_url('hapusprofil/' . $value['id_profile']); ?>"
-                                            class="btn btn-danger">Hapus</a>
                                     </td>
                                 </tr>
                                 <?php endforeach; ?>
                             </tbody>
                         </table>
                     </div>
-                    <!-- /.card-body -->
-
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Modal Produk -->
-<?php foreach ($profile as $key => $value): ?>
+
+<?php foreach ($profile as $value): ?>
 <div class="modal fade" id="edit<?= $value['id_profile']; ?>">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -87,12 +77,12 @@
                         <input type="hidden" name="gambar_lama" value="<?= $value['gambar']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="ikon">Logo :</label>
+                        <label for="ikon">Ikon :</label>
                         <input type="file" class="form-control-file" id="ikon" name="ikon">
                         <input type="hidden" name="ikon_lama" value="<?= $value['ikon']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="warna">Uraian :</label>
+                        <label for="uraian">Uraian :</label>
                         <input type="text" class="form-control" id="uraian" name="uraian"
                             value="<?= $value['uraian']; ?>">
                     </div>
@@ -110,10 +100,8 @@
                 </form>
             </div>
         </div>
-        <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dialog -->
 </div>
-<!-- /.modal -->
 <?php endforeach; ?>
+
 <?php echo view('admin/footer'); ?>
