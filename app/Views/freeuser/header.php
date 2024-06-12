@@ -91,7 +91,7 @@
                                     <a href="<?= base_url('/');?>" class="dropdown-item">Papan Ucapan</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">LogIn</a>
+                            <a href="<?= base_url('/login'); ?>" class="nav-item nav-link">LogIn</a>
                         </div>
 
                     </div>

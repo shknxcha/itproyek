@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Registration Page</title>
+    <title>LDR BOUQUET | Registration</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,15 +20,15 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 
-<body class="hold-transition register-page">
+<body class="hold-transition register-page" style="background-color: #D1C1C1 !important;">
     <div class="register-box">
         <div class="register-logo">
-            <a href="<?= base_url('adminlte/'); ?>index2.html"><b>Admin</b>LTE</a>
+            <a href="<?= base_url('adminlte/'); ?>index2.html"><b>LDR</b> BOUQUET</a>
         </div>
 
         <div class="card">
             <div class="card-body register-card-body">
-                <p class="login-box-msg">Register a new membership</p>
+                <p class="login-box-msg">Daftar untuk belanja!</p>
 
                 <form action="<?= base_url('adminlte/'); ?>index.html" method="post">
                     <div class="input-group mb-3">
@@ -48,6 +48,22 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
+                        <input type="number" class="form-control" placeholder="Nomor WhatsApp/Telepon">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-phone"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <textarea type="text" class="form-control" placeholder="Alamat Domisili"></textarea>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-map-marker-alt"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
                         <input type="password" class="form-control" placeholder="Password">
                         <div class="input-group-append">
                             <div class="input-group-text">
@@ -56,43 +72,27 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Retype password">
+                        <input type="password" class="form-control" placeholder="Konfirmasi password">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-                                <label for="agreeTerms">
-                                    I agree to the <a href="#">terms</a>
-                                </label>
-                            </div>
-                        </div>
+                  
+                        
                         <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        <div class= "text-center mb-3">
+                            <a href="#" class="btn btn-block btn-primary" style="background-color: #7977CA !important;">
+                            Daftar
+                            </a>
                         </div>
-                        <!-- /.col -->
-                    </div>
+                        
                 </form>
 
-                <div class="social-auth-links text-center">
-                    <p>- OR -</p>
-                    <a href="#" class="btn btn-block btn-primary">
-                        <i class="fab fa-facebook mr-2"></i>
-                        Sign up using Facebook
-                    </a>
-                    <a href="#" class="btn btn-block btn-danger">
-                        <i class="fab fa-google-plus mr-2"></i>
-                        Sign up using Google+
-                    </a>
-                </div>
+                
 
-                <a href="login.html" class="text-center">I already have a membership</a>
+                <a href="<?= base_url('/login'); ?>" class="text-center">Sudah punya akun?</a>
             </div>
             <!-- /.form-box -->
         </div><!-- /.card -->
