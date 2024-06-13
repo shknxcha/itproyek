@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Jun 2024 pada 08.14
+-- Waktu pembuatan: 13 Jun 2024 pada 13.19
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -34,6 +34,13 @@ CREATE TABLE `akun` (
   `level` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data untuk tabel `akun`
+--
+
+INSERT INTO `akun` (`id_akun`, `password`, `username`, `level`) VALUES
+(1, 'admin', 'admin', 'admin');
+
 -- --------------------------------------------------------
 
 --
@@ -47,6 +54,13 @@ CREATE TABLE `pengguna` (
   `id_akun` int(11) NOT NULL,
   `nohp` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `pengguna`
+--
+
+INSERT INTO `pengguna` (`id_pengguna`, `nama`, `alamat`, `id_akun`, `nohp`) VALUES
+(1, 'megawati', 'Panggung', 1, 8135678);
 
 -- --------------------------------------------------------
 
@@ -64,6 +78,14 @@ CREATE TABLE `pesanan` (
   `id_produk` int(11) NOT NULL,
   `id_pengguna` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `pesanan`
+--
+
+INSERT INTO `pesanan` (`id_pesanan`, `jumlah_pesanan`, `tanggal`, `total_harga`, `struk`, `status`, `id_produk`, `id_pengguna`) VALUES
+(6, 5, '2024-03-04', 2456, '1718164207_b6ad039b9e6828d74e9e.jpg', '', 13, 1),
+(7, 45, '2024-06-12', 4567, '1718202090_5c3837468dc68700c2a7.jpg', '', 12, 1);
 
 -- --------------------------------------------------------
 
@@ -87,7 +109,6 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id_produk`, `produk`, `warna`, `harga`, `ukuran`, `gambar`, `stok`, `id_pengguna`) VALUES
-(10, 'boneka', 'cream', 5000, 'L', '1718084642_9aefa92da2f63990c0f7.jpg', 12, NULL),
 (11, 'uang', 'pink', 5000, 'S', '1718084686_4928dec26a7dc615fbd0.jpg', 32, NULL),
 (12, 'chocolatos ', 'pink', 5000, 'S', '1718084788_ac570a4b350c8006214d.jpg', 3, NULL),
 (13, 'mawar', 'hitam', 5000, 'L', '1718085105_9ce1f03989c4f5b8dafc.jpg', 5, NULL),
@@ -113,7 +134,7 @@ CREATE TABLE `profile` (
 --
 
 INSERT INTO `profile` (`id_profile`, `gambar`, `ikon`, `uraian`, `keterangan`, `judul`) VALUES
-(1, NULL, NULL, 'dsadadsadasdasdasdasd', 'sdasdsaddadadasda', 'sadasdasdsadasd');
+(1, '', '1718154599_1bd347b247835497e45c.jpg', 'uraian doang', 'keterangan dong', 'sadasdasdsadasd');
 
 -- --------------------------------------------------------
 
@@ -127,6 +148,13 @@ CREATE TABLE `testimoni` (
   `uraian` varchar(100) NOT NULL,
   `id_pengguna` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `testimoni`
+--
+
+INSERT INTO `testimoni` (`id_testimoni`, `gambar`, `uraian`, `id_pengguna`) VALUES
+(5, 1718265224, 'uraian doang', 1);
 
 --
 -- Indexes for dumped tables
@@ -181,19 +209,19 @@ ALTER TABLE `testimoni`
 -- AUTO_INCREMENT untuk tabel `akun`
 --
 ALTER TABLE `akun`
-  MODIFY `id_akun` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_akun` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `pengguna`
 --
 ALTER TABLE `pengguna`
-  MODIFY `id_pengguna` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pengguna` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id_pesanan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `produk`
@@ -211,7 +239,7 @@ ALTER TABLE `profile`
 -- AUTO_INCREMENT untuk tabel `testimoni`
 --
 ALTER TABLE `testimoni`
-  MODIFY `id_testimoni` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_testimoni` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
@@ -227,7 +255,8 @@ ALTER TABLE `pengguna`
 -- Ketidakleluasaan untuk tabel `pesanan`
 --
 ALTER TABLE `pesanan`
-  ADD CONSTRAINT `pesanan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `pesanan_ibfk_1` FOREIGN KEY (`id_pengguna`) REFERENCES `pengguna` (`id_pengguna`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `pesanan_ibfk_2` FOREIGN KEY (`id_produk`) REFERENCES `produk` (`id_produk`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Ketidakleluasaan untuk tabel `produk`

@@ -1,82 +1,49 @@
 <?= $this->include('admin/header'); ?>
-<?= $this->include('admin/menu'); ?>
-
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>Advanced Form</h1>
-                </div>
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Advanced Form</li>
-                    </ol>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-
-            <div class="card card-primary">
-                <div class="card-header">
-                    <h3 class="card-title">Quick Example</h3>
-                </div>
-                <!-- /.card-header -->
-                <!-- form start -->
-                <form>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card-header" style="background-color: #7977CA !important;">
+                        <h3 class="card-title">Data Testimoni</h3>
+                    </div>
                     <div class="card-body">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputFile">File input</label>
-                            <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="exampleInputFile">
-                                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">Upload</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Uraian</th>
+                                    <th>Gambar</th>
+                                    <th>Nama Pengguna</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php $no = 1; ?>
+                                <?php foreach ($testimoni as $value): ?>
+                                <tr>
+                                    <td><?= $no++; ?></td>
+                                    <td><?= $value->uraian; ?></td>
+                                    <td><img src="<?= base_url('gambar_testi/' . $value->gambar); ?>" width="100px"></td>
+                                    <td><?= $value->nama_pengguna; ?></td>
+                                    <td>
+                                        <!-- button modal edit -->
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="testimoni/edit/<?= $value->id_testimoni; ?>">Edit</button>
+                                        <!-- button hapus -->
+                                        <a href="<?= base_url('testimoni/delete/' . $value->id_testimoni); ?>" class="btn btn-danger">Hapus</a>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
                     </div>
-                    <!-- /.card-body -->
-
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
-        <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
+    </div>
+</section>
 <?= $this->include('admin/footer'); ?>
-
-
 </div>
 <!-- ./wrapper -->
-
-<?= $this->include('admin/script'); ?>
 </body>
-
 </html>

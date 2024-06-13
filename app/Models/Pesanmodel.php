@@ -29,10 +29,11 @@ class PesanModel extends Model
         $this->insert($data);
     }
 
-    public function editPesanan($id, $data)
-    {
-        $this->update($id, $data);
-    }
+    public function updatePesanan($id, $data)
+{
+    return $this->update($id, $data);
+}
+
 
     public function hapusPesanan($id)
     {

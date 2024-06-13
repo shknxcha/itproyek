@@ -40,7 +40,7 @@ class Produk extends BaseController
         echo view('produk/lihatproduk', $data);
         echo view('admin/footer');
     }
-    public function editbouquet()
+    public function editproduk()
     {
         echo view('admin/header');
         echo view('produk/editproduk');
@@ -115,7 +115,7 @@ class Produk extends BaseController
 
         // Jika validasi gagal, kembali ke halaman editproduk dengan membawa pesan error
         if (!$validation->withRequest($this->request)->run()) {
-            return redirect()->to('/editproduk/' . $id)->withInput()->with('validation', $validation);
+            return redirect()->to('/editproduk' . $id)->withInput()->with('validation', $validation);
         }
 
         // Ambil file gambar dari form input dengan name="gambar" jika ada

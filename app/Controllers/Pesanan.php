@@ -86,9 +86,8 @@ public function prosesTambah()
 }
 
 
-    public function updatePesanan($id)
+public function updatePesanan($id)
 {
-    // Validasi input data dari form untuk setiap atribut
     $validation = \Config\Services::validation();
     $validation->setRules([
         'jumlah_pesanan' => 'required',
@@ -101,7 +100,7 @@ public function prosesTambah()
     ]);
 
     if (!$validation->withRequest($this->request)->run()) {
-        return redirect()->to('/pesanan/edit/' . $id)->withInput()->with('validation', $validation);
+        return redirect()->to('/pesanan' . $id)->withInput()->with('validation', $validation);
     }
 
     $gambar = $this->request->getFile('struk');
@@ -130,7 +129,11 @@ public function prosesTambah()
         'struk' => $namagambar,
     ];
 
-    $this->pesanModel->updatePesanan($id, $data);
+    if (!$this->pesanModel->updatePesanan($id, $data)) {
+        // Tambahkan pesan debugging di sini
+        return redirect()->to('/pesanan/edit/' . $id)->withInput()->with('error', 'Gagal memperbarui pesanan. Silakan coba lagi.');
+    }
+
     return redirect()->to('/pesanan')->with('success', 'Data berhasil diperbarui');
 }
 
@@ -141,9 +144,6 @@ public function prosesTambah()
     if (!$pesanan) {
         throw new \CodeIgniter\Exceptions\PageNotFoundException('Pesanan dengan ID ' . $id . ' tidak ditemukan');
     }
-
-    $produkModel = new \App\Models\ProdukModel();
-    $penggunaModel = new \App\Models\PenggunaModel();
 
     $produkList = $this->pesanModel->getProdukList();
     $penggunaList = $this->pesanModel->getPenggunaList();

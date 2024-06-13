@@ -1,73 +1,63 @@
-<?= $this->include('admin/header');?>
-
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>DataTables</h1>
-                </div>
+<?php echo view('admin/header');?>
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card-footer">
+                <a href="<?= base_url('/createTestimoni') ?>" class="btn btn-primary mb-2">Tambah Testimoni</a>
             </div>
-        </div><!-- /.container-fluid -->
-    </section>
+            <!-- left column -->
+            <div class="col-12">
+                <!-- general form elements -->
+                <!-- notifikasi sukses dan error -->
+                <?php if (session()->getFlashdata('success')): ?>
+                <div class="alert alert-success" role="alert">
+                    <?= session()->getFlashdata('success'); ?>
+                </div>
+                <?php elseif (session()->getFlashdata('error')): ?>
+                <div class="alert alert-danger" role="alert">
+                    <?= session()->getFlashdata('error'); ?>
+                </div>
+                <?php endif; ?>
+                <div class="card card-primary">
+                    <div class="card-header">
 
-    <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                        </div>
-                        <!-- /.card-header -->
-                        <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Gambar</th>
-                                        <th>Uraian</th>
-                                        <th>aksi </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                    $no=1;
-                    foreach ($testimoni as $key):?>
-                                    <tr>
-                                        <td><?php echo $no++;?></td>
-                                        <td><?php echo $key->gambar;?></td>
-                                        <td>Win 95+</td>
-                                        <td>X</td>
-                                    </tr>
-                                    <?php endforeach;?>
-                                </tbody>
-
-                            </table>
-                        </div>
-                        <!-- /.card-body -->
+                        <h3 class="card-title"><?= $title ?></h3>
                     </div>
-                    <!-- /.card -->
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <!-- table untuk menampilkan produk -->
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Uraian Testimoni</th>
+                                    <th>Gambar</th>
+                                    <th>Nama Pengguna</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php $no = 1; ?>
+                                <?php foreach ($testimoni as $value): ?>
+                                <tr>
+                                    <td><?= $no++; ?></td>
+                                    <td><?= $value->uraian; ?></td>
+                                    <td><img src="<?= base_url('gambar_testi/' . $value->gambar); ?>" width="100px"></td>
+                                    <td><?= $value->nama_pengguna; ?></td>
+                                    <td>
+                                        <a href="testimoni/edit/<?= $value->id_testimoni; ?>" class="btn btn-primary">Edit</a>
+                                        <a href="testimoni/delete/<?= $value->id_testimoni; ?>" class="btn btn-danger">Hapus</a>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+
                 </div>
-                <!-- /.col -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-</div>
-<!-- /.content-wrapper -->
-<?= $this->include('admin/footer');?>
-
-
-</div>
-<!-- ./wrapper -->
-
-<?= $this->include('admin/script');?>
-</body>
-
-</html>
+    </div>
+</section>
+<?php echo view('admin/footer');?>

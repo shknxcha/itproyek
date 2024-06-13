@@ -704,3 +704,6 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
 10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')
 INFO - 2024-06-12 12:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-06-12 13:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-12 14:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

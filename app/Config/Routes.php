@@ -40,9 +40,9 @@ $routes->get('/akun/edit/(:num)', 'Akun::edit/$1');
 $routes->post('/akun/update/(:num)', 'Akun::update/$1');
 
 // untuk data testimoni
-$routes->get('/testimoni', 'Testimoni::testimoni');
-$routes->get('/testimoni/create', 'Testimoni::create');
-$routes->post('/testimoni/store', 'Testimoni::store');
+$routes->get('/testimoni', 'Testimoni::index');
+$routes->get('/createTestimoni', 'Testimoni::formcreate');
+$routes->post('/storeTesti', 'Testimoni::store');
 $routes->get('/testimoni/edit/(:num)', 'Testimoni::edit/$1');
 $routes->put('/testimoni/update/(:num)', 'Testimoni::update/$1');
 $routes->delete('/testimoni/delete/(:num)', 'Testimoni::delete/$1');
