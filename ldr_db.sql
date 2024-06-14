@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Jun 2024 pada 13.19
+-- Waktu pembuatan: 14 Jun 2024 pada 03.35
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -31,15 +31,18 @@ CREATE TABLE `akun` (
   `id_akun` int(11) NOT NULL,
   `password` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `level` varchar(50) NOT NULL
+  `level` varchar(50) NOT NULL,
+  `reset_token` varchar(255) NOT NULL,
+  `token_expiry` int(10) NOT NULL,
+  `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data untuk tabel `akun`
 --
 
-INSERT INTO `akun` (`id_akun`, `password`, `username`, `level`) VALUES
-(1, 'admin', 'admin', 'admin');
+INSERT INTO `akun` (`id_akun`, `password`, `username`, `level`, `reset_token`, `token_expiry`, `email`) VALUES
+(1, 'admin', 'admin', 'admin', '', 0, '');
 
 -- --------------------------------------------------------
 
