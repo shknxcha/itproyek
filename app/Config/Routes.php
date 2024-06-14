@@ -36,6 +36,7 @@ $routes->get('/login', 'Login::login');
 $routes->get('/akun', 'Akun::index');
 $routes->get('/regist', 'Akun::register');
 $routes->post('/prosesregist', 'Akun::create');
+$routes->post('/Loginproses', 'Akun::prosesLogin');
 $routes->get('/akun/edit/(:num)', 'Akun::edit/$1');
 $routes->post('/akun/update/(:num)', 'Akun::update/$1');
 

@@ -1,0 +1,12 @@
+INFO - 2024-06-14 01:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 01:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 01:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 01:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 01:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-14 01:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-14 01:32:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Akun::$model is deprecated in APPPATH\Controllers\Akun.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(355): App\Controllers\Akun->__destruct()
+ 2 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 3 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 4 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xamppp\\htdocs\\appldr\\public\\index.php')

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,9 +28,14 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Silakan Login dengan Akun Anda</p>
 
-      <form action="<?= base_url('adminlte/'); ?>index3.html" method="post">
+      <form action="<?= base_url('/Loginproses') ?>" method="POST" onsubmit="return validateRecaptcha();">
+        <?php if (session()->getFlashdata('error')) { ?>
+          <div class="alert alert-danger">
+            <?php echo session()->getFlashdata('error') ?>
+          </div>
+        <?php } ?>
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username">
+          <input type="text" class="form-control" name="username" placeholder="Username" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -39,22 +43,24 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
-        <div class= "text-center mb-3">
-        
-        <a href="#" class="btn btn-block btn-primary" style="background-color: #7977CA !important;">
-           Masuk
-        </a>
-        <a href="#" class="btn btn-block btn-danger">
-          Lupa Password
-        </a>
-      </div>
+        <div class="form-group">
+          <div class="g-recaptcha" data-sitekey="6LdtHDApAAAAAB8rUvf2yVbrkVzY9mPCldsmSZ7H"></div>
+        </div>
+        <div class="text-center mb-3">
+          <button type="submit" class="btn btn-block btn-primary" style="background-color: #7977CA !important;">
+            Masuk
+          </button>
+          <a href="#" class="btn btn-block btn-danger">
+            Lupa Password
+          </a>
+        </div>
       </form>
 
       <p class="mb-0">
@@ -72,6 +78,18 @@
 <script src="<?= base_url('adminlte/'); ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url('adminlte/'); ?>dist/js/adminlte.min.js"></script>
-
+<!-- reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  function validateRecaptcha() {
+    var response = grecaptcha.getResponse();
+    if (response.length === 0) {
+      alert('Mohon centang kotak reCAPTCHA sebelum login.');
+      return false;
+    } else {
+      return true;
+    }
+  }
+</script>
 </body>
 </html>
